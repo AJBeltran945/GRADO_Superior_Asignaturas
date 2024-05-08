@@ -1,0 +1,255 @@
+Act1
+Scanner sc = new Scanner(System.in);
+        int num, mayor = 0, menor = 999999;
+        System.out.println("Dime 5 numeros: ");
+        for(int i = 0; i < 5 ; i ++){
+             num = sc.nextInt();
+            if(num > mayor){
+                mayor = num;
+            }
+            if(num < menor){
+                menor = num;
+            }
+        }
+
+        System.out.println("El numero mayor es: "+mayor);
+        System.out.println("El numero menor es: "+menor);
+;
+
+Act2
+Scanner sc = new Scanner(System.in);
+
+        int anterior = 0, num;
+        boolean creciente = true, decreciente = true;
+
+        System.out.println("Dime 5 numeros: ");
+        for(int i = 1; i <= 5; i++){
+            num= sc.nextInt();
+
+            if(anterior != 0){
+                if(num>anterior){
+                    decreciente = false;
+                } else if(num<anterior){
+                    creciente = false;
+                }
+            }
+
+            anterior = num;
+        }
+
+        if(decreciente){
+            System.out.println("Los numeros estan es orden decreciente");
+        } else if(creciente){
+            System.out.println("Los numeros estan en orden creciente");
+        }else{
+            System.out.println("los numeros estan desordenados");
+        }
+;
+
+Act3
+Scanner sc = new Scanner(System.in);
+
+        int num, area, altura, base;
+
+        System.out.println("Que area quieres calcular, triangulo(1) o cuadrado(2)?");
+        num=sc.nextInt();
+        if (num==1) {
+            System.out.println("Bien! Ahora dime la altura que tiene: ");
+            altura = sc.nextInt();
+            System.out.println("ahora dime el base: ");
+            base = sc.nextInt();
+            area = (base*altura)/2;
+            System.out.println("La area del triangulo segun el info introducidos es: "+area);
+        } else if (num==2){
+            System.out.println("Bien! Ahora dime la altura que tiene: ");
+            altura = sc.nextInt();
+            System.out.println("ahora dime el base: ");
+            base = sc.nextInt();
+            area = base*altura;
+            System.out.println("La area del triangulo segun el info introducidos es: "+area);
+        }
+;
+
+Act4
+Scanner sc = new Scanner(System.in);
+        int num1, num2, num3, num4;
+        boolean divisor;
+
+        System.out.println("Dime 3 numeros: ");
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        num3 = sc.nextInt();
+
+        System.out.println("Dime los segundos horas y minutos: ");
+        num4 = sc.nextInt();
+
+        if (num1 % num4 == 0){
+            divisor = true;
+        }else if (num2 % num4 == 0){
+            divisor = true;
+        }else if (num3 % num4 == 0){
+            divisor = true;
+        }else{
+            divisor = false;
+        }
+
+        if (divisor){
+            System.out.println("El numero "+num4+" es DIVISOR de los numeros ");
+        }else{
+            System.out.println("El numero "+num4+" NO es DIVISOR de los numeros");
+        }
+;
+
+Act5
+Scanner sc = new Scanner(System.in);
+        int num1, num2;
+        
+        System.out.println("Dime un numero: ");
+        num1 = sc.nextInt();
+        System.out.println("Dime otro: ");
+        num2 = sc.nextInt();
+        int suma = 0;
+        
+        if (num1 > num2) {
+            for(int i = num2; i<=num1; i++) {
+                suma += i;
+            }
+            System.out.println("La suma de "+num2+" fins a "+num1+" es: "+ suma);
+        } else if (num1 < num2) {
+            for(int i = num1; i<=num2; i++) {
+                suma += i;
+            }
+            System.out.println("La suma de "+num1+" fins a "+num2+" es: "+ suma);
+        }
+;
+
+Act6
+Scanner sc = new Scanner(System.in);
+        int altura, base;
+
+        System.out.println("Dime la altura del rectangulo: ");
+        altura = sc.nextInt();
+        System.out.println("Dime la base del rectangulo: ");
+        base = sc.nextInt();
+
+        for(int i=0;i<altura; i++) {
+            for(int j=0;j<base;j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+;
+
+Act7
+Scanner sc = new Scanner(System.in);
+        int altura;
+
+        System.out.println("Escriu laltura del triangle que vols dibuixar: ");
+        altura = sc.nextInt();
+        for(int i=1; i<=altura; i++) {
+            for(int j=1; j<=i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+;
+
+Act8
+Scanner sc = new Scanner(System.in);
+        int altura;
+
+        System.out.println("Escriu laltura del triangle que vols dibuixar: ");
+        altura = sc.nextInt();
+        for(int i=altura; i>=1; i--) {
+            for(int j=i; j>=1;j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+;
+
+Act9
+Scanner sc = new Scanner(System.in);
+        int altura;
+
+        System.out.println("Escriu laltura del triangle que vols dibuixar: ");
+        altura = sc.nextInt();
+        for(int i=1; i<=altura; i++) {
+            for(int j=1; j<=i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=altura-1; i>=1; i--) {
+            for(int j=i; j>=1;j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+;
+
+Act10
+Scanner sc = new Scanner(System.in);
+        int num;
+
+        System.out.println("Escriu un nombre: ");
+        num = sc.nextInt();
+        System.out.print("Els divisors de "+num+" son: ");
+        for(int i=1; i<=num; i++){
+            if (num % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+;
+
+Act11
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        
+        System.out.println("Escriu un nombre: ");
+        num = sc.nextInt();
+
+        senar(num);
+        sc.close();
+    }
+
+    static void senar(int num) {
+        if (num % 2 == 1) {
+            System.out.println("El numero es senar");
+        } else {
+            System.out.println("El numero es parell");
+        }
+    }
+;
+
+Act12
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escriu un nombre: ");
+        int num = sc.nextInt();
+        System.out.println("Escriu el primer numero");
+        int num1 = sc.nextInt();
+        System.out.println("Escriu un segon numero mayor al primer");
+        int num2 = sc.nextInt();
+        senar(num);
+        senarsEntre(num1, num2);
+        sc.close();
+    }
+
+    static void senar(int num) {
+        if (num % 2 == 1) {
+            System.out.println("El numero es senar");
+        } else {
+            System.out.println("El numero es parell");
+        }
+    }
+    static void senarsEntre(int num1, int num2) {
+        System.out.println("");
+        for(int i=num1; i<=num2; i++ ) {
+            if (i % 2 == 1) {
+                System.out.println(i);
+            }
+        }
+    }
+;

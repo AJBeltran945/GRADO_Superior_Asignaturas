@@ -1,0 +1,88 @@
+Act1
+main () {
+float baseImposable, importIVA, importTotal;
+int iva;
+print(“Escriu la base imposable: “);
+baseImposable = input();
+print(“Escriu l’IVA a aplicar: “);
+iva = input();
+
+importIVA = baseImposable*iva/100;
+print(“Import IVA: “ importIVA);
+importTotal = baseImposable + importIVA;
+print(“Import total: “ importTotal;
+}
+
+Act2
+main() {
+int num1, num2;
+boolean ans = false;
+print(“Dime un numero”);
+num1 = input()
+print(“dime otro número”);
+num2 = input();
+ans = num1 == num2;
+print (“los dos números son iguales? = “ans);
+}
+
+Act3
+main() {
+int base, alt;
+float area;
+print (“dime la base de la area que quieres”);
+base = input();
+print (“dime el altura de la area que quieres”);
+alt = input();
+area = base * alt / 2
+print(“tu area es de” + area)
+}
+
+Act4
+main () {
+int a, b, c, x, y;
+print (“dime el valor de a”)
+a = input ()
+print (“dime el valor de b”)
+b = input ()
+print (“dime el valor de c”)
+c = input ()
+print (“dime el valor de x”)
+x = input ()
+y = a*x*2 + b*x + c
+print(“el resultado del polinomio siguiente y=ax2+bx+c es = ” y)
+}
+
+Act5
+main (){
+int 1mesur, 2 mesur, 3mesur, totalmesur;
+print (“dime una mesura en mm”)
+1mesur = input() / 10
+print (“dime una mesura en cm”)
+2mesur = input()
+print (“dime una mesura en m”)
+3mesur = input() * 100
+totalmesur = 1mesur + 2mesur + 3mesur
+print(“Si sumamos toda las mesuras que me has dado en cm el total sería: ” totalmesur)
+}
+
+Act6
+Scanner sc = new Scanner (System.in);
+            
+            int hr;
+            int min;
+            int sec, sec1;
+            System.out.println("Dime una hora: ");
+            hr =  sc.nextInt();
+            System.out.println("Dime unos minutos: ");
+            min = sc.nextInt();
+            System.out.println("Dime unos segundos: ");
+            sec = sc.nextInt();
+            
+            sec1 =sec+ (hr*3600) + (min*60) +1;
+            
+            hr= sec1/3600;
+            sec1= sec1 - (hr *3600);
+            min= sec1 / 60;
+            sec1= sec1 - (min *60);
+            
+            System.out.println("Hay "+hr+" horas "+min+" minuto y "+sec1+" segundos");

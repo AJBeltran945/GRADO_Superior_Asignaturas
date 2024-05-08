@@ -1,0 +1,124 @@
+Act1
+Fes una funció que calculi i mostri la superfície i el volum d’una esfera:
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double rad;
+
+        System.out.println("Dime el radio del spefere");
+        rad=sc.nextInt();
+
+        SurVolEsfera(rad);
+    }
+
+    static void SurVolEsfera (double rad){
+        double sur, vol;
+        vol = ((4 * Math.PI)/3)*Math.pow(rad, 3);
+        sur = (4*Math.PI)*Math.pow(rad,3);
+
+        System.out.println("Superficie: " + sur);
+        System.out.println("Volum: " + vol);
+    }
+;
+
+Act2
+que calcula i retorna la distància entre dos punts (x1, y1) i (x2, y2). 
+La fórmula per a calcular la distància és: distancia 
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Double x1,x2, y1,y2, distancia;
+
+        System.out.println("Dime los x de la distancia: ");
+        x1 = sc.nextDouble();
+        x2 = sc.nextDouble();
+        System.out.println("Dime los y de la distancia: ");
+        y1 = sc.nextDouble();
+        y2 = sc.nextDouble();
+
+        distancia = distanciatotal( x1, x2, y1, y2);
+        System.out.println("Distancia euclídea: " + distancia);
+    }
+
+    static double distanciatotal (double x1, double x2, double y1, double y2){
+        return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+    }
+;
+
+Act3
+Crea una funció nombresParells(int n) que mostri per pantalla els primers n
+nombres parells.
+
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+
+        System.out.println("Dime un numero: ");
+        n = sc.nextInt();
+
+        numerospares(n);
+    }
+
+    static void numerospares (int n){
+        int par = 0;
+        for (; n > 0 ; n--){
+            par +=2;
+            System.out.println("El numero "+par+" es PAR");
+        }
+    }
+;
+
+Act4
+Fes una funció que rebi com a paràmetres tres nombres sencers: dies, hores i minuts, i
+retorni el nombre de segons totals que existeixen a les dades d’entrada.
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int dia, hora, min, sec = 0;
+
+        System.out.println("Dime cuantos dias hay: ");
+        dia = sc.nextInt();
+        System.out.println("Dime cuantos horas hay: ");
+        hora = sc.nextInt();
+        System.out.println("Dime cuantos minutos hay: ");
+        min = sc.nextInt();
+
+        sec = sectotal(dia, hora, min, sec);
+        System.out.println("Hay un total de "+sec+" segundos");
+    }
+
+    static int sectotal (int dia, int hora, int min, int sec){
+        sec = (dia*24*3600) + (hora*3600) + (min*60);
+        return sec;
+    }
+;
+
+Act5
+Fes una funció a la que se li passin les hores i minuts de dos instants de temps. La
+funció ha de retornar la quantitat de minuts que han passat entre els dos instants. El
+prototip de la funció serà:
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int  hora1, min1, hora2, min2, dif = 0;
+
+        System.out.println("Dime las primeras horas y minutos: ");
+        hora1 = sc.nextInt();
+        min1 = sc.nextInt();
+        System.out.println("Dime los segundos horas y minutos: ");
+        hora2 = sc.nextInt();
+        min2 = sc.nextInt();
+
+        dif = diferencia(hora1, min1, hora2, min2, dif);
+        System.out.println("la diferencia entre las dos horas son: "+dif+" minutos");
+    }
+
+    static int diferencia (int hora1, int min1, int hora2, int min2, int dif){
+        dif = ((hora1*60)+min1) - ((hora2*60)+min2);
+        if(dif<0){
+            dif *= -1;
+        }
+        return dif;
+    }
+;
+
+Act6
+Fes una funció que calculi una sèrie de nombres aleatoris sencers. 
+Els paràmetres de la funció seran: el valor mínim, el valor màxim, i 
+la quantitat de nombres a mostrar.

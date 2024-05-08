@@ -1,0 +1,2 @@
+Fes una aplicació que determini el màxim entre 2 o 3 números. 
+Ha de tenir dues funcions amb sobrecàrrega a les que puguem passar 2 o 3 xifres.

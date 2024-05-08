@@ -1,0 +1,4 @@
+Fes una aplicació per a gestionar la puntuació d’una competició de programació. A la competició hi participen 5 programadors, que aniran obtenint la puntuació a mesura que acabin la prova. La puntuació són nombres sencers, que s’aniran guardant a un array de manera ordenada a mesura que els competidors acabin la prova. En acabar els 5 programadors, es mostraran les 5 puntuacions per pantalla.
+
+A vegades, quan els 5 participants han acabant, es van sumant programadors d’exibició, i la seva puntuació també s’afegeix a l’array i es mostra per pantalla. La manera de finalitzar la introducció de nous reusltats és posant la puntuació -1.
+

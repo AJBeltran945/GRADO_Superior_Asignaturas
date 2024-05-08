@@ -1,0 +1,97 @@
+For1
+Scanner sc = new Scanner(System.in);
+
+        int count = 1;
+        int num;
+        System.out.println("Dime un numero: ");
+        num = sc.nextInt();
+        for (; count <= num; count++) {
+            System.out.println(count);
+        }
+;
+
+For2
+Scanner sc = new Scanner(System.in);
+
+        for (int i = 7; i < 100; i += 7) {
+            System.out.println(i);
+        }
+;
+
+For3
+Scanner sc = new Scanner(System.in);
+
+        int numtotal;
+        int num;
+        int media = 0;
+
+        System.out.println("Dime un numero: ");
+        numtotal = sc.nextInt();
+        System.out.println("El numero que me has dicho es: " + numtotal);
+
+        for (int i = 1; i < 10; i++) {
+            System.out.println("Dime otro numero: ");
+            num = sc.nextInt();
+
+            System.out.println("El numero que me has dicho es: " + num);
+
+            numtotal += num;
+            media = numtotal / i;
+        }
+        System.out.println("La media de todo los numero que me acabas de decir es: " + media);
+;
+
+For4
+Scanner sc = new Scanner(System.in);
+
+        int numtotal = 1;
+        int num;
+        int i = 1;
+
+        System.out.println("Dime un numero: ");
+        num = sc.nextInt();
+
+        for (; i <= num; i++) {
+            numtotal = i * numtotal;
+        }
+		
+        System.out.println("El numero factorial de " + num + " es: " + numtotal);
+;
+
+For5
+Scanner sc = new Scanner(System.in);
+
+        int numalu;
+        int notas;
+        int notastotal = 0;
+        double media=0;
+        int sus=0;
+        int apt=0;
+
+        System.out.println("Cuantos alumnos hay?");
+        numalu= sc.nextInt();
+
+        for (int i= 1; i <= numalu; i++) {
+            System.out.println("Nota del alumno "+i+" es: ");
+            notas = sc.nextInt();
+            
+            if(notas>10 || notas<0){
+                System.out.println("Error: nota NO valido");
+                System.exit(0);
+            }
+            
+            if (notas < 5){
+                sus++;
+            }else{
+                apt++;
+            }
+            
+            notastotal = notas + notastotal;
+            media = notastotal/numalu;
+            
+        }
+        
+        System.out.println("Hay "+sus+" alumnos suspendidos");
+        System.out.println("Hay "+apt+" alumnos aprovados");
+        System.out.println("La nota media es: "+media)
+;

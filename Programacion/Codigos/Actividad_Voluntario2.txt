@@ -1,0 +1,172 @@
+Act 1
+
+Scanner sc = new Scanner (System.in);
+        
+        float base;
+        float altura;
+        float area;
+        
+        System.out.println("Dime la base de una area:");
+        base= sc.nextInt();
+        
+        if (base<0) {
+            System.out.println("Error: base no valida!!");
+            System.exit(0);
+        }
+        
+        System.out.println("Bien!! ahora dime la altura de una area");
+        altura = sc.nextInt();
+        
+        if (altura<0) {
+            System.out.println("Error: Altura no valida!!");
+            System.exit(0);
+        }
+        
+        area = (altura * base) / 2;
+        System.out.println("La area con una base: "+base+"  y de una altura: "+altura+" es: "+area);
+;
+
+Act 2
+
+Scanner sc = new Scanner (System.in);
+        
+        int num, ans;
+        
+        System.out.println("Dime un numero para decir su numero absuluto: ");
+        num = sc.nextInt();
+        
+        ans = num < 0 ? num * -1 : num;
+        
+       System.out.println("El numero absuluto de: "+num+" es : "+ans);
+;
+
+Act 3
+
+Scanner scanner = new Scanner(System.in);
+
+        int ani;
+        double pinso, ali, totalali;
+
+        System.out.print("Pinsos (Kg): ");
+        pinso = scanner.nextDouble();
+
+        System.out.print("Animales (cantidad):");
+        ani = scanner.nextInt();
+
+        if (ani <= 0) {
+            System.out.println("Error: El número de animales debe ser positivo.");
+            System.exit(0);
+        }
+        System.out.print("Alimentacion (Kg): ");
+        ali = scanner.nextDouble();
+        totalali = ani * ali;
+
+        if (pinso >= totalali) {
+            System.out.println("Hay comida");
+        } else {
+            ali = pinso / ani;
+            System.out.println("No hay comida ");
+            System.out.println("Cada animal solo puede comer " + ali + " kg de comida.");
+        }
+;
+
+Act 4 
+
+Scanner sc = new Scanner(System.in);
+        System.out.println("Escriba el número de su DNI (sin letra):");
+        int numero = sc.nextInt();
+        char letra = '-';
+        switch (numero % 23) {
+            case 0:
+                letra = 'T';
+                break;
+            case 1:
+                letra = 'R';
+                break;
+            case 2:
+                letra = 'W';
+                break;
+            case 3:
+                letra = 'A';
+                break;
+            case 4:
+                letra = 'G';
+                break;
+            case 5:
+                letra = 'M';
+                break;
+            case 6:
+                letra = 'Y';
+                break;
+            case 7:
+                letra = 'F';
+                break;
+            case 8:
+                letra = 'P';
+                break;
+            case 9:
+                letra = 'D';
+                break;
+            case 10:
+                letra = 'X';
+                break;
+            case 11:
+                letra = 'B';
+                break;
+            case 12:
+                letra = 'N';
+                break;
+            case 13:
+                letra = 'J';
+                break;
+            case 14:
+                letra = 'Z';
+                break;
+            case 15:
+                letra = 'S';
+                break;
+            case 16:
+                letra = 'Q';
+                break;
+            case 17:
+                letra = 'V';
+                break;
+            case 18:
+                letra = 'H';
+                break;
+            case 19:
+                letra = 'L';
+                break;
+            case 20:
+                letra = 'C';
+                break;
+            case 21:
+                letra = 'K';
+                break;
+            case 22:
+                letra = 'E';
+                break;
+        }
+        System.out.println("DNI: " + numero + "-" + letra);
+;
+
+Act 5
+
+Scanner scanner = new Scanner(System.in);
+        int num, numr = 0, digi;
+
+        System.out.print("Introduce un número entre 0 y 9999: ");
+        num = scanner.nextInt();
+
+        while (num > 0) {
+            digi = num % 10;
+            numr = numr * 10 + digi;
+            num /= 10;
+        }
+
+        if (num == numr) {
+            System.out.println("El número es capicúa.");
+        } else {
+            System.out.println("El número no es capicúa.");
+        }
+    }

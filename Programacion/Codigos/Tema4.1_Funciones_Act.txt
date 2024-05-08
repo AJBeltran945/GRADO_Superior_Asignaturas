@@ -1,0 +1,62 @@
+Funciones1
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("introdueix el nombre de Eco");
+        int n = sc.nextInt();
+        Eco(n);
+
+    }
+
+    public static void Eco(int Eco) {
+        for (int i = 0; i < Eco; i++) {
+            System.out.println("Eco");
+        }
+    }
+
+Funciones2
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num1, num2;
+
+        System.out.println("Dime un numero: ");
+        num1 = sc.nextInt();
+        System.out.println("Dime otro: ");
+        num2 = sc.nextInt();
+        funcion(num1, num2);
+    }
+
+    public static void funcion(int num1, int num2) {
+        int major = (num1 > num2) ? num1 : num2;
+        int menor = (num1 < num2) ? num1 : num2;
+        for (int i = major - 1; i > menor; i--) {
+            System.out.println(i);
+        }
+    }
+	
+Funciones3
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double alt, rad;
+        int num;
+
+        System.out.println("Dime 1 si quieres lac cular la area y 2 para el volumen: ");
+        num = sc.nextInt();
+        System.out.println("Dime la altura: ");
+        alt= sc.nextInt();
+        System.out.println("Dime el radio: ");
+        rad= sc.nextInt();
+        calculo(num, alt, rad);
+    }
+
+    public static void calculo(int num, double alt, double rad) {
+        double ans;
+        if (num==1){
+            ans = 2*Math.PI*rad*(alt+rad);
+            System.out.println(ans);
+        }else{
+            ans = Math.PI * Math.pow(rad, 2) * alt;
+            System.out.println(ans);
+        }
+    }

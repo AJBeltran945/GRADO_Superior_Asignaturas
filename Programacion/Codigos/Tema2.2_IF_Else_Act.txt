@@ -1,0 +1,71 @@
+If_Else1
+Scanner sc = new Scanner (System.in);
+        System.out.println("Dime un numero: ");
+        int num = sc.nextInt();
+        if (num % 2 == 0){
+            System.out.println("El numero que has dicho es Par");
+        }else{
+            System.out.println("El numero que has dicho es Impar");
+        }
+;
+
+If_Else2
+Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Dime un numero");
+        int num1 = sc.nextInt();
+        System.out.println("Dime otro");
+        int num2 = sc.nextInt();
+        
+        if (num1 > num2){
+            System.out.println("El numero mayor es: " + num1);
+        }else{
+            System.out.println("El numero mayor es: " + num2);
+        }
+
+If_Else3
+Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Dime un numero");
+        float num1 = sc.nextFloat();
+        
+        if (num1 < 1 && num1 > -1 && num1 != 0){
+            System.out.println("El " + num1 + " es un numero quasi-zero");
+        }else{
+            System.out.println("El " + num1 + " no es un numero quasi-zero");
+        }
+;
+
+If_Else4
+Scanner sc = new Scanner (System.in);
+                
+           System.out.println("Dime un numero: ");
+           int num1 = sc.nextInt();
+           System.out.println("Dime otro: ");
+           int num2 = sc.nextInt();
+           
+           int ans1= num1 > num2 ? num1 : num2;
+           int ans2= num1 < num2 ? num1 : num2;
+           
+           System.out.println("Primero va el numero: "  + ans1);
+           System.out.println("Despues va el numero: "  + ans2);
+;
+
+If_Else5
+Scanner sc = new Scanner (System.in);
+                
+           System.out.println("Dime un numero");
+           int num1 = sc.nextInt();
+           System.out.println("Dime otro");
+           int num2 = sc.nextInt();
+           
+           if (num1 == num2){
+               System.out.println("El numero: " + num1 + " es igual que el numero: " + num2 );
+           }else{
+               if (num1 > num2){
+                    System.out.println("El numero mayor es: " + num1);
+               }else{
+                    System.out.println("El numero mayor es: " + num2);
+               }
+           }
+;

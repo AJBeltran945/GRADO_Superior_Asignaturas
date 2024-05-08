@@ -1,0 +1,22 @@
+Fes una funció que rebi per paràmetre dues taules, la primera amb 6 
+nombres compresos entre 0 i 99, representant una aposta de la Primitiva. 
+La segona, també de 6 nombres, amb els nombres guanyadors. La funció ha de 
+retornar el número d’encerts.
+
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] apuesta = {13, 54, 70, 10, 7};
+        int[] aciertos = {1, 54, 7, 1, 0};
+        int acertados = apuestas(apuesta, aciertos);
+        System.out.println(acertados);
+    }
+static int apuestas(int[] apuesta, int[] aciertos){
+        Arrays.sort(apuesta);
+        int cantidadAcertados = 0;
+        for (int i = 0; i < aciertos.length; i++) {
+            if (Arrays.binarySearch(apuesta, aciertos[i]) >= 0) {
+                cantidadAcertados++;
+            }
+        }
+        return cantidadAcertados;
+	}

@@ -1,0 +1,79 @@
+While1
+Scanner sc = new Scanner (System.in);
+        
+        int num;
+        System.out.println("Dime un numero: ");
+        num = sc.nextInt();
+        
+        while(num != 0){
+            
+            if (num % 2 == 0){
+                System.out.println("El numero que has dicho es Par");
+                
+            }else{
+                num=0;
+            }
+            if (num> 0){
+                System.out.println("Es positivo");
+            }else{
+                num=0;
+            }
+            int rnum = num * num;
+            System.out.println("la raiz cuadrada es: "+rnum);
+            
+            System.out.println("Dime un numero: ");
+            num = sc.nextInt();
+        }
+;
+
+While2
+Scanner sc = new Scanner (System.in);
+        
+        int edad;
+        int count = 0;
+        int edadtotal = 0;
+        int media;
+        int mayor = 0;
+        System.out.println("Inroduce una edad de un alumno: ");
+        edad = sc.nextInt();
+        
+        while(edad>0){
+            edadtotal= edad+ edadtotal;
+            count++;
+            
+            if (edad>=18){
+            mayor++;
+        }
+            
+            System.out.println("Introduce otro edad: ");
+            edad= sc.nextInt();
+        }
+        
+        media = edadtotal / count;
+        System.out.println("La suma de todo los edades seria: "+edadtotal);
+        System.out.println("La edad media seria: "+media);
+        System.out.println("La cantidad de alumnos seria: "+count);
+        System.out.println("La cantidad de mayores de edad son: "+mayor);
+;
+
+While3
+Scanner sc = new Scanner (System.in);
+        
+        int numSec = (int) (Math.random() * 100 + 1);
+        int num;
+        
+        /* System.out.println(numSec);*/
+        System.out.println("introduce un numero: ");
+        num = sc.nextInt();
+        
+        while (num != numSec) {
+            if (num > numSec) {
+                System.out.println("El numero: "+num+" es mayor");
+            } else {
+                System.out.println("El numero: "+num+" es menor");
+            }
+            System.out.println("Otro intento, introduce otro numero: ");
+            num= sc.nextInt();
+        }
+		System.out.println("Muy Bien!!");
+;

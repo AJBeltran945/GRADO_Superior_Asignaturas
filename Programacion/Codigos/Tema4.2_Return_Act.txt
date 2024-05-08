@@ -1,0 +1,41 @@
+dissenyar una funcion que recibe dos valores enteros i devuelva el valor maximo de ambos
+
+public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int a, b;
+        System.out.println("a");
+        a = sc.nextInt();
+        System.out.println("b");
+        b = sc.nextInt();
+        System.out.println("El mas grande es: " + max(a, b));
+    }
+    static int max(int a, int b){
+        return  a >= b ? a : b;
+    }
+
+
+hacer una aplicacion que pregunta el numero de horas minutos y segundo. una funcion tiene 
+que comprovar si los valores introducidos son corectos. es decir, que las horas i los minutos 
+no tienen mas de 60 minutos o segundos respectivamente
+
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Dime la hora, los minutos y los segundos");
+        int hora = sc.nextInt();
+        int minutos = sc.nextInt();
+        int segundos = sc.nextInt();
+        boolean hora_valida = hora_valida(hora, minutos, segundos);
+        System.out.println(hora_valida);
+    }
+    public static boolean hora_valida(int hora, int minutos, int segundos) {
+        if (hora < 0 || hora > 23) {
+            return false;
+        }
+        if (minutos < 0 || minutos >= 60) {
+            return false;
+        }
+        if (segundos < 0 || segundos >= 60) {
+            return false;
+        }
+        return true;
+    }

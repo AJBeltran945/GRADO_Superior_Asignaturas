@@ -1,0 +1,123 @@
+Act1
+Scanner sc = new Scanner(System.in);
+
+int hora, min, sec, sumsec, totalsec;
+
+System.out.println("Intorduce las horas: ");
+hora = sc.nextInt();
+System.out.println("Intorduce los minutos: ");
+min = sc.nextInt();
+System.out.println("Intorduce los Segundos: ");
+sec = sc.nextInt();
+System.out.println("Segundos a incrementar: ");
+sumsec = sc.nextInt();
+        
+totalsec = (hora * 3600) + (min * 60) + sec + sumsec;
+min = totalsec / 60;
+totalsec %= 60;
+hora = min / 60;
+min %= 60;
+
+System.out.println("Resultado: " + hora + " horas, " + min + " minutos y " + totalsec + " segundos");
+
+Act2
+Scanner sc = new Scanner(System.in);
+
+        int numdestino, numorigen = 1, ans;
+        int noprim =0, prim = 0;
+
+        System.out.println("dime un numero: ");
+        numdestino = sc.nextInt();
+
+        for (int i = 1; i <= numdestino; i++) {
+            ans = 1;
+            for (; numorigen < i; numorigen++) {
+                ans = i % numorigen;
+                /*System.out.println(ans);*/
+                if (ans == 0) {
+                    System.out.println("" + i + " -> NO es primo");
+                    noprim++;
+                    break;
+                }
+            }
+            if (ans>0){
+                System.out.println("" + i + " -> es primo");
+                prim++;
+            }
+            numorigen = 2;
+        }
+        System.out.println("El resultado de n="+numdestino+" es "+prim+". entre 1 y "+numdestino+" hay "+prim+" numeros primos");
+;
+
+Act3
+Scanner sc = new Scanner(System.in);
+        
+        int num1, num2, menor, mcd =0;
+        
+        System.out.println("Dime dos numeros para buscar su maximo comun divisor: ");
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        
+        menor = (num1 < num2) ? num1 : num2;
+        for (int i = menor; i >= 1; i--) {
+            if (num1 % i == 0 && num2 % i == 0) {
+                mcd = i;
+                break;
+            }
+        }
+        System.out.println("El MCD de " + num1 + " i " + num2 + " es: " + mcd);
+;
+
+Act4
+Scanner sc = new Scanner(System.in);
+        
+        int num1, num2, menor, mcd =0, mcm;
+        
+        System.out.println("Dime dos numeros para buscar su maximo comun divisor: ");
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        
+        menor = (num1 < num2) ? num1 : num2;
+        for (int i = menor; i >= 1; i--) {
+            if (num1 % i == 0 && num2 % i == 0) {
+                mcd = i;
+                break;
+            }
+        }
+        mcm= (num1*num2) /mcd;
+        System.out.println("El MCM de " + num1 + " i " + num2 + " es: " + mcm);
+
+Act5
+Scanner sc = new Scanner(System.in);
+
+        int arrel, ans= 0, resta, count =1;
+        
+        System.out.println("Dime un numero para sacar su arel cuadrada: ");
+        arrel = sc.nextInt();
+        
+        /*for (int i = 1; i<arrel; )*/
+        
+        while (ans <= arrel){
+            ans = count * count;
+            count++;
+            /*System.out.println(ans);*/
+        }
+        ans = count -2;
+        resta = arrel -(ans*ans);
+        System.out.println("El resultado es "+ans+" con la resta de "+resta);
+;
+
+Act6
+Scanner sc = new Scanner(System.in);
+        
+        int num, bin;
+        
+        System.out.println("Dime un numero");
+        num = sc.nextInt();
+        
+        while (num >0){
+            bin = num %2;
+            System.out.println(bin);
+            num = num/2;
+        }
+;

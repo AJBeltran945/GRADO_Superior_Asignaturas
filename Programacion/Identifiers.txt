@@ -1,0 +1,9 @@
+public class nIndentifiers{
+Arraylist<String[]> register = new ArrayList < String[]> ()
+
+public nIdentifiers(){}
+
+public void record (String[] orderID){
+	register.add(orderID)
+}
+}

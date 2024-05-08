@@ -1,0 +1,118 @@
+import java.util.*;
+public class biblioteca {
+    static int numordre;
+    static String[] autor = new String[50];
+    static String[] titol = new String[50];
+    static String[] pagines = new String[50];
+    static boolean surti=true;
+    static int contallibre = 0;
+    public static void main(String[] args) {
+        while (surti==true) {
+            System.out.println("------Gestio de Biblioteca----- \n1 Introdueix un llibre \n2 Llistar llibres \n3 cercar llibre per autor \n4 Cercar llibre per titol" +
+                    "\n5 Eliminar llibre \n6 Sortir");
+            Scanner sc = new Scanner(System.in);
+            numordre = sc.nextInt();
+            switch (numordre){
+                case 1: afegirLlibre();break;
+                case 2: llistarLlibres();break;
+                case 3: cercarPerAutor();break;
+                case 4: cercarPerTitol();break;
+                case 5: eliminarLlibre();break;
+                case 6: surti=false;
+            }
+        }
+    }
+    public static void afegirLlibre() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Titol del llibre");
+        String comprovatitol = sc.nextLine();
+        for (int i = 0; i < titol.length; i++) {
+            if (comprovatitol.equals(titol[i])) {
+                System.out.println("Aquest llibre ja esta registrat");
+                return;
+            }
+        }
+        titol[contallibre] = comprovatitol;
+        System.out.println("Autor del llibre");
+        autor[contallibre] = sc.nextLine();
+        System.out.println("Pagines del llibre");
+        pagines[contallibre] = sc.nextLine();
+        contallibre++;
+    }
+    public static String[] llistarLlibres(){
+        if (contallibre == 0) {
+            System.out.println("No hi ha cap llibre");
+        }else {
+            for (int i = 0; i < contallibre; i++) {
+                System.out.println("Llibre " + i + " Auto: " + autor[i] + " Titol: " + titol[i] + " Pagines: " + pagines[i]);
+            }
+        }
+        return autor;
+    }
+    public static void cercarPerAutor(){
+        int conta = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nom del autor que vols serca");
+        String sercaauto = sc.nextLine();
+        for (int i = 0; i < titol.length; i++) {
+            if (sercaauto.equals(autor[i])) {
+                System.out.println("El llibre es " + titol[i] + " L'auto es " + autor[i] + " El numero de pagines es " + pagines[i]);
+                conta++;
+            }
+            if (conta == 0){
+                System.out.println("De aquest autor no tenim cap llibre");
+                return;
+            }
+        }
+    }
+    public static void cercarPerTitol(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Titol del llibre per cerca");
+        String comprovatitol = sc.nextLine();
+        for (int i = 0; i < titol.length; i++) {
+            if (comprovatitol.equals(titol[i])) {
+                System.out.println("El llibre es " + titol[i] + " L'auto es " + autor[i] + " El numero de pagines es " + pagines[i]);
+                return;
+            }else {
+                System.out.println("El llibre no existeix");
+                return;
+            }
+        }
+    }
+    public static void eliminarLlibre(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Titol del llibre per borra");
+        String comprovatitol = sc.nextLine();
+
+        int posicionA =0;
+        boolean controlLibro = false;
+
+        for (int i = 0; i < titol.length; i++) {
+            if (comprovatitol.equals(titol[i])) {
+                System.out.println("El llibre borrat es " + titol[i] + " L'auto es " + autor[i] + " El numero de pagines es " + pagines[i]);
+                titol[i] = null;
+                autor[i] = null;
+                pagines[i] = null;
+                posicionA = i;
+                contallibre--;
+                controlLibro = true;
+            }
+        }
+        for (int j = posicionA; j <= titol.length -1; j++) {
+            if (controlLibro){
+                if (j != titol.length -1){
+                    titol[j] = titol[j +1];
+                    autor[j] = autor[j +1];
+                    pagines[j] = pagines[j +1];
+                }
+                if (j == titol.length -1) {
+                    titol[j] = null;
+                    autor[j] = null;
+                    pagines[j] = null;
+                }
+            }else {
+                System.out.println("El libro no existe");
+            }
+        }
+    }
+}
