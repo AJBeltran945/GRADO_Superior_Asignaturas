@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apartado 1</title>
+    <style>
+        .verde {
+            color:green;
+        }
+        .azul {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let fecha = new Date();
+        let numero = Number(prompt("Escribe un número."));
+        let contador=0;
+        for(i=1;i<=numero;i++){
+            if(i % 2 == 0){
+                contador++;
+            }
+        }
+        document.write("<p class='verde'> Hay " + contador + " pares.</p>");
+        document.write("<p class='azul'> " + fecha + " </p>");
+    </script>
+</body>
+</html>

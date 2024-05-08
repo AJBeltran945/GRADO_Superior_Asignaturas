@@ -1,0 +1,39 @@
+input{
+    height: 100px;
+    width: 100%;
+    border: 0;
+    background-color: #3B3486;
+    font-size: 40px;
+    text-align: center;
+    color: #864AF9;
+}
+select{
+    height: 50px;
+    width: 50%;
+    border: 0;
+    background-color: #3B3486;
+    font-size: 40px;
+    text-align: center;
+    color: #864AF9;
+    margin-bottom: 30px;
+    font-family: monospace;
+
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+}
+html{
+    background-color: #332941;
+    color: #864AF9;
+    font-family: monospace;
+}

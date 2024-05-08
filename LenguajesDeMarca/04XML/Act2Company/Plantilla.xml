@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company SYSTEM "products.dtd">
+<company>
+  <clients>
+    <client>
+      <ID>12345678X</ID>
+      <client_name>John</client_name>
+      <surname>Doe</surname>
+      <client_address>123 Main Street</client_address>
+      <dob>1980-01-01</dob>
+    </client>
+    </clients>
+    
+  <products>
+    <product>
+      <code>PROD001</code>
+      <product_name>T-Shirt</product_name>
+      <unitprice>19.99</unitprice>
+      <suppliercode>SUP001</suppliercode>
+    </product>
+    </products>
+
+  <suppliers>
+    <supplier>
+      <NIF>98765432Z</NIF>
+      <supplier_name>Textile Factory</supplier_name>
+      <supplier_address>55 Industrial Road</supplier_address>
+    </supplier>
+    </suppliers>
+</company>

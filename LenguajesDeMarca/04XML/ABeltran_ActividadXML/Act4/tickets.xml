@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tickets SYSTEM "tickets.dtd">
+<tickets>
+    <datosTickets codigoTickets="_7458632" fecha="25-02-2024" hora="10:38">
+        <precioTotal sinIva="10" iva="21%" pvpTotal="13" moneda="euro"/>
+        <formaPago>
+            <efectivo/>
+            <conTarjeta tipo="visa" n= "************9876" nombreCliente="austin" />
+        </formaPago>
+    </datosTickets>
+
+    <datosComercio nombre="Mercadona" direccion="C/ proisos" cif="qwerty" telefono="963852741" />
+
+    <datosCompra>
+        <lineasCompra nombreArticulo="suchi" cantidad="3" precioUnitario="4" iva="21%" pvp="5" />
+    </datosCompra>
+</tickets>

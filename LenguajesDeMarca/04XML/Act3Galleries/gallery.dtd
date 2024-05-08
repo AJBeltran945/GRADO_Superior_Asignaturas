@@ -1,0 +1,24 @@
+<!ELEMENT gallery (artists, artworks, customers)>
+<!ELEMENT artists (artist*)>
+<!ELEMENT artist (name, birthplace, age, style)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birthplace (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT style (#PCDATA)>
+
+<!ELEMENT artworks (artwork*)>
+<!ELEMENT artwork (creator, year, title, type, price, groups)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT groups (group+)>
+<!ELEMENT group (#PCDATA)>
+
+<!ELEMENT customers (customer*)>
+<!ELEMENT customer (name, address, total_spent, preferences)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT total_spent (#PCDATA)>
+<!ELEMENT preferences (artist?, group?)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT group (#PCDATA)>

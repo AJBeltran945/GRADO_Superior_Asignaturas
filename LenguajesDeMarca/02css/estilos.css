@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Pokemon;
+    src: url(Pokemon\ Hollow.ttf);
+}
+
+p {
+    font-family: Pokemon;
+    font-size: x-large;
+}
+
+p>a {
+    font-size: 50px;
+}
+
+[href]{
+    color: red;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    body{
+    background-color: blue;
+    font-family: Times New Roman;
+    }
+    header h3{
+    text-align : center;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    body{
+    background-color: red;
+    }
+    }

@@ -1,0 +1,138 @@
+html {
+    background-color: #F1E4C3;
+    font-family: arial;
+    color: #597E52;
+}
+header{
+    background-color: #C6A969;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #FFFFEC;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    height: 5px;
+    background: #597E52;
+}
+
+/* Estilos de los inputs */
+input{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #597E52;
+    font-family: arial;
+    border-radius: 5px;
+}
+
+#peso {
+    height: 75px;
+    width: 875px;
+    background-color: #FFFFEC;
+    border: 0;
+}
+
+#altura1 {
+    border: 0;
+    background-color: #FFFFEC;
+    height: 75px;
+    width: 400px;
+}
+
+#altura2 {
+    border: 0;
+    background-color: #FFFFEC;
+    height: 75px;
+    width: 400px;
+}
+::placeholder {
+    color: #597E52;
+    opacity: 1;
+}
+
+/* Estilos de como se va na ver los resultados */
+#resultArea{
+    height: 177px;
+    width: 300px;
+    background-color: #FFFFEC;
+    text-align: center;
+    font-size: 30px;
+    color: #597E52;
+    border-radius: 5px;
+}
+
+#resultReco{
+    font-size: 18px;
+    color: #597E52;
+}
+
+/* Estilos de los botones */
+button{
+    width: 150px;
+    height: 75px;
+    background-color: #597E52;
+    color: #FFFFEC;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #FFFFEC;
+    color: #597E52;
+}
+
+/* Organizacion de la area del historial */
+
+#historyArea{
+    display: flex;
+}
+
+#historyBTT{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del resultado del historial */
+
+textarea{
+    margin-left: 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #FFFFEC;
+    color: #597E52;
+    font-size: 18px;
+    font-family: arial;
+}
+
+/* Estilos para areglar el video */
+#video{
+    display: flex;
+    align-items: center;
+}
+video{
+    margin-left: 20px;
+    margin-right: 20px;
+}

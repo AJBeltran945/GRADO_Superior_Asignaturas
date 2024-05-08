@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades Javascript I</title>
+    <script src="Actividad1.js"></script>
+    <script src="Actividad2.js"></script>
+    <script src="Actividad3.js"></script>
+    <script src="Actividad4.js"></script>
+    <script src="Actividad5.js"></script>
+    <script src="Actividad6.js"></script>
+    <script src="Actividad7.js"></script>
+</head>
+
+<body>
+    <h1>Actividades Javascript I</h1>
+    <h2>Actividad 1</h2>
+    <p>
+        1.- Crea una página web que pida un número al usuario. Haz que la web indique si
+        realmente es un número lo que introdujo el usuario.
+    </p>
+    <input type="number" id="inputNum" placeholder="Introduce un número">
+
+    <button onclick="act1()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <h2>Actividad 2</h2>
+    <p>
+        2.- Crea una página web que pida al usuario dos números y que muestre el mayor de los
+        dos.
+    </p>
+    <input type="text" id="inputNum1" placeholder="Introduce un numero">
+    <input type="text" id="inputNum2" placeholder="Introduce otro numero">
+
+    <button onclick="act2()">Verificar</button>
+
+    <p id="resultado2"></p>
+
+    <h2>Actividad 3</h2>
+    <p>
+        3.- Crea una página web que pida al usuario el nombre, el salario y la edad de una persona.
+        Luego muestra el nombre, la edad y el salario recalculado de la siguiente manera. Si el
+        salario es superior a 2000 euros no cambiará. Si el salario está entre 1000 y 2000 euros,
+        ambos incluidos, subirá un 3% si la edad es superior a 45 años y un 10% si la edad es
+        inferior. Si el salario es menor que 1000 euros si son menores de 30 años cobrarán
+        exactamente 1100 euros, si son mayores de 45 años se sube un 15% y si la edad está entre
+        30 y 45 años, ambas incluidas, el salario subirá un 3%.
+    </p>
+    <input type="text" id="nombre" placeholder="Introduce tu Nombre">
+    <input type="text" id="salario" placeholder="Introduce tu Salario">
+    <input type="text" id="edad" placeholder="Introduce tu Edad">
+
+    <button onclick="act3()">Verificar</button>
+
+    <p id="resultado3"></p>
+
+    <h2>Actividad 4</h2>
+    <p>
+        4.- Crea una web que calcule aleatoriamente un número del 1 al 100. Luego pregunte al
+        usuario por el número mientras no acierte. Si el número escrito es el correcto indicará que
+        ha acertado y terminará el juego. Si el número indicado por el usuario es mayor que el
+        elegido entonces indicará “El número es menor”. Si el número indicado por el usuario es
+        menor que el elegido entonces indicará “El número es mayor”. Si el usuario introduce algo
+        que no es un número indicará “No me times”.
+    </p>
+
+    <button onclick="actividad4()">Hacer Actividad 4</button>
+
+    <h2>Actividad 5</h2>
+    <p>
+        5.- Crea una página web cómo la anterior añadiendo que sólo se puedan tener 5 intentos.
+    </p>
+
+    <button onclick="act5()">Hacer actividad 5</button>
+
+    <h2>Actividad 6</h2>
+    <p>
+        6.- Crea una página web que pida al usuario un entero positivo (mayor que 0). Si lo que
+        escribe el usuario no es un entero positivo entonces vuelve a preguntar el número. Si
+        escribe un entero positivo muestra un triangulo de asteriscos.
+    </p>
+    <button onclick="act6()">Hacer Actividad 6</button> <br> <br>
+    <textarea name="estrellas" id="act6" cols="30" rows="10"></textarea>
+
+    <h2>Actividad 7</h2>
+    <p>
+        7.- Crea una página web que haga lo mismo que el anterior pero con el triángulo invertido.
+    </p>
+    <button onclick="act7()">Hacer Actividad 7</button> <br> <br>
+    <textarea name="estrellas" id="act7" cols="30" rows="10"></textarea>
+</body>
+
+</html>

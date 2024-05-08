@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </header>
+    <body>
+        <h1 style="margin-left: 35%; margin-right: 40%; text-align: center;">Formulario</h1>
+
+        <fieldset style="margin-left: 35%; margin-right: 40%;">
+            <legend>Registro de nuevo usuario</legend>
+            
+            <br>
+            
+            <form action="http://www.infojobs.com" method="get"> 
+                <Fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label for="user">Nombre y Apellido:</label>
+                    <input type="text" id="user" name="usuario" value="" required>
+
+                    <br> <br>
+
+                    <label for="address">Direccion:</label>
+                    <input type="text" id="address" name="address" value="C/ De la abundancia, 1." size="35" required>
+
+                    <br> <br>
+
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" id="tel" name="Telefono" value="">
+                </Fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Informacion tecnica</legend>
+
+                    <label for="Programador" requ>Programador:</label>
+                    <br>
+                    Si<input type="radio" id="Programador" name="Si" value="Si" checked required>
+                    <br>
+                    No<input type="radio" id="Programador" name="No" value="No">
+
+                    <br> <br>
+
+                    <label for="Lenguajes de Programacion">Lenguajes de Programacion:</label>
+
+                    <br>
+
+                    Java<input type="checkbox" id="Lenguajes" name="Java" value="Java">
+                    
+                    Python<input type="checkbox" id="Lenguajes" name="Python" value="Python">
+
+                    Rust<input type="checkbox" id="Lenguajes" name="Rust" value="Rust">
+
+                    <br> <br>
+
+                    <label for="Descripcion">Descripcion:</label>
+
+                    <br>
+
+                    <textarea name="Descripcion" id="Descripcion" cols="20" rows="5" maxlength="200">Escribe aqui mas detalles.</textarea>
+                </fieldset>
+            
+                <br>
+
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Restablecer Formulario">
+            </form>
+        </fieldset>
+    </body>
+</html>

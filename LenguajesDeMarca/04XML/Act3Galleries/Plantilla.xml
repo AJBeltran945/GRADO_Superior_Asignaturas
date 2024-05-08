@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gallery SYSTEM "gallery.dtd">
+<gallery>
+    <artists>
+        <artist>
+            <name>Artist Name</name>
+            <birthplace>Birthplace</birthplace>
+            <age>Artist Age</age>
+            <style>Art Style</style>
+        </artist>
+    </artists>
+    <artworks>
+        <artwork>
+            <creator>Artist Name</creator>
+            <year>Year Made</year>
+            <title>Artwork Title</title>
+            <type>Type of Art</type>
+            <price>Price</price>
+            <groups>
+                <group>Group Name</group>
+            </groups>
+        </artwork>
+    </artworks>
+    <customers>
+        <customer>
+            <name>Customer Name</name>
+            <address>Customer Address</address>
+            <total_spent>Total Amount Spent</total_spent>
+            <preferences>
+                <artist>Preferred Artist</artist>
+                <group>Preferred Group</group>
+            </preferences>
+        </customer>
+    </customers>
+</gallery>

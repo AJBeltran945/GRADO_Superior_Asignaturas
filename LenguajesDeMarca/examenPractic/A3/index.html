@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apartado 3</title>
+    <style>
+        #goku {
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+    <img id="goku" src="goku.png"  width="300" onclick="resetea();"/>
+    <img id="centenas"/>
+    <img id="unidades"/>
+    <script>
+        let numero = Number(prompt("Escribe un número de dos cifras"));
+        document.getElementById("centenas").src = Math.floor(numero / 10) + ".png";;
+        document.getElementById("unidades").src = (numero % 10) + ".png";
+
+        let x = Math.floor(Math.random()*1000);
+        let y = Math.floor(Math.random()*300);
+        let goku = document.getElementById("goku");
+        goku.style.top = y + "px";
+        goku.style.left = x + "px";
+
+        function resetea() {
+            document.getElementById("centenas").src="0.png";
+            document.getElementById("unidades").src="0.png";
+        }
+    </script>
+</body>
+</html>

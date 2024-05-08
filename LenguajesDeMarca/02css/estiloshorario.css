@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Pokemon;
+    src: url(Pokemon\ Solid.ttf);
+}
+
+
+
+body {
+    background-color: brown;
+    background: url("Boruto_BI.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background-color: #ffd64e;
+}
+
+.cap {
+    font-family: Pokemon;
+    font-size: x-large;
+}
+
+.hora {
+    font-size: large;
+}
+
+table,
+th,
+td {
+    border: 2.5px solid black;
+    border-collapse: collapse;
+    color: #01a7de;
+}
+
+.llm {
+    background-color: #d87591;
+}
+
+.prog {
+    background-color: #1c909d;
+}
+
+.bd {
+    background-color: lightgreen;
+}
+
+.FOL {
+    background-color: lightsalmon;
+}
+
+.si {
+    background-color: lightyellow;
+}
+
+.ent {
+    background-color: purple;
+}
+
+.pat {
+    background-color: #ffd64e;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula IMC</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Code.js"></script>
+</head>
+
+<header>
+    <h1>Calcula tu IMC</h1>
+</header>
+
+<body>
+    <br><br>
+    <article id="info">
+        <article id="input">
+            <article>
+                <input type="number" id="peso" placeholder="Peso (KG)">
+            </article>
+            <hr>
+            <article>
+                <input type="number" id="altura1" placeholder="Altura (Metros)" onkeyup="copy()">
+                <img src="IMG/multiply.png" alt="" height="25">
+                <input type="number" id="altura2" placeholder="Altura (Metros)" onkeyup="copy2()">
+            </article>
+        </article>
+        
+        <img src="IMG/equals.png" alt="" height="25">
+        <article id="resultArea">
+            <p id="resultIMC"></p>
+        </article>
+    </article>
+    <br><br>
+    <article id="video">
+        <h1>Como calcular?</h1>
+        <video src="IMG/Video.mp4" controls  loop height="300px"></video>
+        <p id="resultReco"></p>
+    </article>
+    <br><br>
+    <button onclick="calcularIMC()">Calcular</button>
+    <br><br>
+    <article>
+        
+    </article>
+    <br><br>
+    <img src="IMG/Escala.png" alt="figura 1">
+    <br><br>
+    <h1>Historial</h1>
+    <article id="historyArea">
+        <article id="historyBTT">
+            <button onclick="seeHistory()">Ver historial</button>´
+            <button onclick="deleteHistory()">Eliminar historial</button>
+        </article>
+        <textarea id="historyResult" name="historyResult" cols="80" rows="15" onload=""></textarea>
+    </article>
+    <br><br>
+</body>
+<footer>
+
+</footer>
+
+</html>

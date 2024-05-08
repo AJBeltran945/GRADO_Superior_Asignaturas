@@ -1,0 +1,9 @@
+<!ELEMENT librería (libro+)>
+<!ELEMENT libro (título, autor+, ISBN?, páginas, precio)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT páginas (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST libro id ID #IMPLIED>
+<!ATTLIST libro tipo CDATA #IMPLIED>

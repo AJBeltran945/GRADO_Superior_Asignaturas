@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE temporada SYSTEM "temporada.dtd">
+<temporada año="2000">
+    <!-- Jornada 1-->
+    <jornada numero="1">
+        <partido numero="1">
+            <fecha>2000-02-02</fecha>
+            <estadio espectadores="49000">Lansdowne Road</estadio>
+            <local>Irlanda</local>
+            <visitante>Inglaterra</visitante>
+            <resultado local="17" visitante="6" />
+        </partido>
+        <partido numero="2">
+            <fecha>2000-02-03</fecha>
+            <estadio>El parque de los príncipes</estadio>
+            <local>Francia</local>
+            <visitante>Gales</visitante>
+            <aplazado />
+        </partido>
+        <partido numero="3">
+            <fecha>2000-02-04</fecha>
+            <estadio>Estadio 3</estadio>
+            <local>Escocia</local>
+            <visitante>Italia</visitante>
+            <aplazado />
+        </partido>
+    </jornada>
+    <!-- Jornada 2 -->
+    <jornada numero="2">
+        <partido numero="1">
+            <fecha>2000-02-05</fecha>
+            <estadio>Estadio 1</estadio>
+            <local>Inglaterra</local>
+            <visitante>Francia</visitante>
+            <aplazado />
+        </partido>
+        <partido numero="2">
+            <fecha>2000-02-06</fecha>
+            <estadio>Estadio 2</estadio>
+            <local>Gales</local>
+            <visitante>Italia</visitante>
+            <resultado local="6" visitante="17" />
+        </partido>
+        <partido numero="3">
+            <fecha>2000-02-07</fecha>
+            <estadio>Estadio 3</estadio>
+            <local>Escocia</local>
+            <visitante>Irlanda</visitante>
+            <aplazado />
+        </partido>
+    </jornada>
+</temporada>
+

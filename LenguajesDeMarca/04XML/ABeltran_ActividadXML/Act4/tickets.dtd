@@ -1,0 +1,28 @@
+<!ELEMENT tickets (datosTickets, datosComercio, datosCompra)>
+<!ELEMENT datosTickets (precioTotal, formaPago)>
+<!ATTLIST datosTickets codigoTickets ID #REQUIRED>
+<!ATTLIST datosTickets fecha NMTOKEN #REQUIRED>
+<!ATTLIST datosTickets hora NMTOKEN #REQUIRED>
+<!ELEMENT precioTotal EMPTY>
+<!ATTLIST precioTotal sinIva NMTOKEN #REQUIRED>
+<!ATTLIST precioTotal iva CDATA #REQUIRED>
+<!ATTLIST precioTotal pvpTotal NMTOKEN #REQUIRED>
+<!ATTLIST precioTotal moneda NMTOKEN #REQUIRED>
+<!ELEMENT formaPago (efectivo,conTarjeta)>
+<!ELEMENT efectivo EMPTY>
+<!ELEMENT conTarjeta EMPTY>
+<!ATTLIST conTarjeta tipo NMTOKEN #REQUIRED>
+<!ATTLIST conTarjeta n CDATA #REQUIRED>
+<!ATTLIST conTarjeta nombreCliente NMTOKEN #REQUIRED>
+<!ELEMENT datosComercio (#PCDATA)>
+<!ATTLIST datosComercio nombre NMTOKEN #REQUIRED>
+<!ATTLIST datosComercio direccion CDATA #REQUIRED>
+<!ATTLIST datosComercio cif NMTOKEN #REQUIRED>
+<!ATTLIST datosComercio telefono NMTOKEN #REQUIRED>
+<!ELEMENT datosCompra (lineasCompra)>
+<!ELEMENT lineasCompra EMPTY>
+<!ATTLIST lineasCompra nombreArticulo NMTOKEN #REQUIRED>
+<!ATTLIST lineasCompra cantidad NMTOKEN #REQUIRED>
+<!ATTLIST lineasCompra precioUnitario CDATA #REQUIRED>
+<!ATTLIST lineasCompra iva CDATA #REQUIRED>
+<!ATTLIST lineasCompra pvp NMTOKEN #REQUIRED>

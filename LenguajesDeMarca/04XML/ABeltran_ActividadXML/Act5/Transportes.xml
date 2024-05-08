@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresaTransportes SYSTEM "Transported.dtd">
+<empresaTransportes>
+    <camiones>
+        <camioneros identificacion="_74126359Ñ" nombre="austin" nTelefono="147852369" direccion="C/ rio" salario="1000" ciutat="santander">
+            <paquetes>Paquete 1</paquetes>
+            <paquetes>Paquete 2</paquetes>
+        </camioneros>
+        <camioneros identificacion="_12345678Y" nombre="bruce" nTelefono="963852741" direccion="C/ colonias" salario="150" ciutat="caceres">
+            <paquetes>Paquete 3</paquetes>
+            <paquetes>Paquete 4</paquetes>
+        </camioneros>
+    </camiones>
+    <provincias>
+        <provincia>Zaragoza</provincia>
+        <provincia>Catalunya</provincia>
+    </provincias>
+</empresaTransportes>

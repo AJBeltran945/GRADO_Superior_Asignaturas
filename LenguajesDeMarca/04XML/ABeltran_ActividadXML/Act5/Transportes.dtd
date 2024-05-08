@@ -1,0 +1,12 @@
+<!ELEMENT empresaTransportes (camiones+, provincias+)>
+<!ELEMENT camiones (camioneros+)>
+<!ELEMENT camioneros (paquetes+)>
+<!ATTLIST camioneros identificacion ID #REQUIRED>
+<!ATTLIST camioneros nombre NMTOKEN #REQUIRED>
+<!ATTLIST camioneros nTelefono NMTOKEN #REQUIRED>
+<!ATTLIST camioneros direccion CDATA #REQUIRED>
+<!ATTLIST camioneros salario NMTOKEN #REQUIRED>
+<!ATTLIST camioneros ciutat NMTOKEN #REQUIRED>
+<!ELEMENT paquetes (#PCDATA)>
+<!ELEMENT provincias (provincia+)>
+<!ELEMENT provincia (#PCDATA)>

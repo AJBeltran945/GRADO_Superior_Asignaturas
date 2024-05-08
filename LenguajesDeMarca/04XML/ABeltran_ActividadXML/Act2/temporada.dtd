@@ -1,0 +1,27 @@
+<!ELEMENT temporada (jornada+)>
+<!ATTLIST temporada año CDATA #REQUIRED>
+
+<!ELEMENT jornada (partido, partido, partido)>
+<!ATTLIST jornada numero CDATA #REQUIRED>
+
+<!ELEMENT partido (fecha, estadio, local, visitante, (resultado | aplazado)?)>
+<!ATTLIST partido numero CDATA #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT estadio (#PCDATA)>
+<!ATTLIST estadio espectadores CDATA #IMPLIED>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT visitante (#PCDATA)>
+
+<!ELEMENT resultado EMPTY>
+<!ATTLIST resultado local CDATA #REQUIRED visitante CDATA #REQUIRED>
+
+<!ELEMENT aplazado EMPTY>
+
+<!ENTITY % paises "(Inglaterra|Francia|Irlanda|Escocia|Gales|Italia)">
+<!ELEMENT Inglaterra EMPTY>
+<!ELEMENT Francia EMPTY>
+<!ELEMENT Irlanda EMPTY>
+<!ELEMENT Escocia EMPTY>
+<!ELEMENT Gales EMPTY>
+<!ELEMENT Italia EMPTY>

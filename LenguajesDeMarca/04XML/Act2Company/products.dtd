@@ -1,0 +1,21 @@
+<!ELEMENT company (clients, products, suppliers)>
+<!ELEMENT clients (client*)>
+<!ELEMENT client (ID, client_name, surname, client_address, dob)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT client_name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT client_address (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+
+<!ELEMENT products (product*)>
+<!ELEMENT product (code, product_name, unitprice, suppliercode)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT product_name (#PCDATA)>
+<!ELEMENT unitprice (#PCDATA)>
+<!ELEMENT suppliercode (#PCDATA)>
+
+<!ELEMENT suppliers (supplier*)>
+<!ELEMENT supplier (NIF, supplier_name, supplier_address)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT supplier_name (#PCDATA)>
+<!ELEMENT supplier_address (#PCDATA)>

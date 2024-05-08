@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje SYSTEM "mensaje.dtd">
+<mensaje>
+    <email respuesta="no">
+        <cabecera>
+            <emisor>austin</emisor>
+            <receptor>mama</receptor>
+            <fecha>21/02/82024</fecha>
+        </cabecera>
+        <asunto>Hola</asunto>
+        <texto>
+            <saludo>Hola ,mama,</saludo>
+            <saludo>Espero que estés bien.</saludo>
+            <saludo>¡Qué tengas un buen día!</saludo>
+        </texto>
+    </email>
+</mensaje>
