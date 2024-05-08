@@ -1,0 +1,50 @@
+ utilizamos nano para modificar un archivo 
+
+#!/bin/bash (sirve para que todo lo sigiuente lo reconozca como bash) 
+
+se puede ejecutar con sh prova.sh 
+
+sudo chmod +x prova.sh (para que no de errore) 
+
+./prova.sh 
+
+echo para mostrar algo en pantalla 
+
+sleep “x” numero de segundos que tardara en ejecutar el siguiente mensaje 
+
+red el usuario introduzca informacion 
+
+$ si le pones un simbolo de dinero obligas al usuario a poner la informacion de la variable antes de ejecutar el programa. justo a lado del programa.
+
+nombre = $(pwd) llamara el comando de ubuntu todo lo que este dentro de las barras y ademas se le puede asignar a una viable 
+
+echo “te agrada el cafe”
+read cafe 
+
+if [[ $cafe == “y” ]]; then 
+echo “ets el millor”
+else 
+echo “vaja vaja”
+fi
+
+x=1
+
+while[[ $x -le 100 ]]
+
+do 
+echo “hola he fet $x” ]]
+
+done 
+
+do 
+read -p “dominada $x: clica a enter per contnuar”
+(( x++))
+done 
+
+until 
+
+while true 
+do 
+echo “perill”
+done
+echo $(((RANDOM % 10)) + $VARIABLE )
