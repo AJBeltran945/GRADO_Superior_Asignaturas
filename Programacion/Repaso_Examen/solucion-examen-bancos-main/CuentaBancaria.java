@@ -25,7 +25,7 @@ abstract public class CuentaBancaria {
     }
 
     public double getSaldo() {
-        return saldo;
+        return saldo;   
     }
 
     // Añadir cantidad (método privado usado por ingresar y retirar)
